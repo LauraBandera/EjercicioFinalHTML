@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <h2>Formulario de entrada</h2>
+        <form action="index.html" method="post">
+            <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre"/>
+            <br/>
+            <br/>
+            <label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos"/>
+            <br/>
+            <br/>
+            <table  width="1550">
+            <tr>
+                <td size="200">Edad:</td> 
+                <td>¿Cómo nos conociste?</td>
+                
+            </tr>
+            <tr>
+                <td>
+            <input type="radio" name="edad" value="0-20" id="0-20"/><label for="0-20"> 0-20</label>
+                </td> 
+                <td><input type="checkbox" name="conocer" id="amigo"/><label for="amigo">A través de un amigo</label></td>
+            </tr> 
+            <tr>
+                <td><input type="radio" name="edad" value="20-40" id="20-40"/><label for="20-40"> 20-40</label></td>
+                <td><input type="checkbox" name="conocer" id="buscador"/><label for="buscador">A través de un buscado</label>r</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="edad" value="40-60" id="40-60"/><label for="40-60"> 40-60</label></td>
+                <td><input type="checkbox" name="conocer" id="red"/><label for="red">Navegando por la red</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="edad" value="60-100" id="60-100"/><label for="60-100"> 60-100</label></td>
+                <td><input type="checkbox" name="conocer" id="otros"><label for="otros">Otros</label></td>
+            </tr>
+            </table>
+            <br/>
+            <br/>
+            <label for="opinion">Opinión sobre nuestra página web</label>
+            <br/>
+            <textarea cols="40" rows="10" name="opinion" id="opinion">Escriba aquí su opinión...</textarea>
+            <br/>
+            <br/>
+            ¿Cuánto navegas por internet? (Señala la opción que más se acerque)
+            <br/>
+            <select size="2" name="navegar" id="navegar">
+                <option value="1">2 horas al día</option>
+                <option value="2">4 horas al día</option>
+                <option value="3">6 horas al día</option>
+                <option value="4">8 horas al día</option>
+            </select>
+            <br/>
+            <br/>
+            <input type="submit" name="btninicio" value="Ir a Inicio"/>
+                <input type="reset" name="btnBorrar" value="Borrar formuario"/>
+        </form>
+    </body>
+</html>
